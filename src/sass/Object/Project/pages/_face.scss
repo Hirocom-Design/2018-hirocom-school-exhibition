@@ -1,0 +1,6 @@
+.p-face{
+  &__hero{
+    background: $color-yellow;
+    @include bgCover('../assets/img/banner/bnr_yellow.png');
+  }
+}

@@ -1,0 +1,6 @@
+.p-fantasy{
+  &__hero{
+    background: $color-purple;
+    @include bgCover('../assets/img/banner/bnr_purple.png');
+  }
+}

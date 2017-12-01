@@ -1,0 +1,115 @@
+.p-concept {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @include bgCover( '../assets/img/hero_bg.png');
+  background-attachment: fixed;
+  &__container {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    &--left {
+      align-items: flex-start;
+    }
+    &--right {
+      align-items: flex-end;
+    }
+  }
+  &__textblock {
+    box-sizing: border-box;
+    padding: 5vh 2.4rem;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    &--left {
+      align-items: flex-start;
+    }
+    &--right {
+      align-items: center;
+    }
+  }
+  &__textarea {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 0 4.2rem;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 2.4rem;
+  }
+  &__title {
+    width: 100%;
+    height: 25vh;
+    @include bgContain( '../assets/img/heading.svg');
+    background-position: left;
+    margin-bottom: 6.4rem;
+  }
+  &__theme {
+    font-size: 8vw;
+    margin-bottom: 6.4rem;
+  }
+  &__theme-text {
+    letter-spacing: 0.2rem;
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+    text-align: center;
+    line-height: 3.4rem;
+    width: auto;
+  }
+  &__text {
+    font-size: 1.4rem;
+    margin-bottom: 3.4rem;
+    width: auto;
+    &--mobile {
+      word-wrap: break-word;
+      display: none;
+    }
+  }
+  &__logo {
+    position: absolute;
+    top: 5%;
+    width: 25%;
+    height: 90%;
+    &--right {
+      right: 0;
+      @include bgCover( '../assets/img/item2.svg');
+      background-position: left;
+    }
+    &--left {
+      left: 0;
+      @include bgCover( '../assets/img/item3.svg');
+      background-position: right;
+    }
+  }
+  @include mobile {
+    &__textblock {
+      width: 100%;
+    }
+    &__text {
+      font-size: 1.4rem;
+      line-height: 4.2rem;
+      margin-bottom: 0;
+      &--display {
+        display: none;
+      }
+      &--mobile {
+        display: inline-block;
+      }
+    }
+    &__theme {
+      font-size: 8vh;
+      margin-bottom: 6.4rem;
+    }
+    &__logo {
+      display: none;
+    }
+  };
+}

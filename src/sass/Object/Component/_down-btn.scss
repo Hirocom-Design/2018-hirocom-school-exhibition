@@ -1,0 +1,17 @@
+.c-down-btn{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;;
+  box-sizing: border-box;
+  width: 10%;
+  height: 5%;
+  margin-bottom: 2rem;
+  padding: 1.2rem;
+  &__item{
+    width: 80%;
+    transition: .2s;
+  }
+  @include mobile{
+    display: none;
+  };
+}

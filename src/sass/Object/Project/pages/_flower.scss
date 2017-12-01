@@ -1,0 +1,6 @@
+.p-flower{
+  &__hero{
+    background: $color-pink;
+    @include bgCover('../assets/img/banner/bnr_pink.png');
+  }
+}

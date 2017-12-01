@@ -1,0 +1,12 @@
+html {
+    font-size: 62.5%;
+    @include wide{
+        font-size: 65%;
+    };
+}
+
+body {
+  width: 100%;
+    font-size: 1rem;
+}
+@include fontfamily;

@@ -1,0 +1,47 @@
+/*==============================================================================
+Media Query
+==============================================================================*/
+/*
+Width
+*/
+$mobile : 767px;
+$middle : 768px;
+$tablet : 1024px;
+$window : 1025px;
+$wide : 1441px;
+
+@mixin wide {
+  @media screen and (min-width: $wide){
+    @content;
+  }
+}
+@mixin window {
+  @media screen and (min-width: $window){
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: $tablet)and(min-width: $middle){
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: $mobile){
+    @content;
+  }
+}
+/*==============================================================================
+background
+==============================================================================*/
+@mixin bgCover($URL) {
+  background: url(#{$URL});
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@mixin bgContain($URL) {
+  background: url(#{$URL});
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,15 @@
+.l-wrap {
+  width: 100%;
+  min-height: 100vh;
+  &__box{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+  }
+  @include tablet{
+    &__box{
+      flex-direction: column;
+    }
+  };
+}

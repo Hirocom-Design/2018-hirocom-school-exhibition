@@ -1,0 +1,19 @@
+.l-content {
+  width: 80%;
+  min-height: 100vh;
+  background: #fff;
+  &__cotainer{
+    width: 100%;
+    min-height: 100vh;
+  }
+  @include tablet{
+    width: 100%;
+    min-height: 80vh;
+    &__cotainer{
+    min-height: 80vh;
+  }
+  };
+  @include mobile{
+    width: 100%;
+  };
+}

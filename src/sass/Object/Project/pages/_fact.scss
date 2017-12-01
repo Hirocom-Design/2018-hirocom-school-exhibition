@@ -1,0 +1,6 @@
+.p-fact{
+  &__hero{
+    background: $color-red;
+    @include bgCover('../assets/img/banner/bnr_red.png');
+  }
+}

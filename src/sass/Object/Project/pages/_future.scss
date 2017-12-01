@@ -1,0 +1,6 @@
+.p-future{
+  &__hero{
+    background: $color-blue;
+    @include bgCover('../assets/img/banner/bnr_blue.png');
+  }
+}

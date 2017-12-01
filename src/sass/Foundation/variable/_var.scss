@@ -1,0 +1,18 @@
+$color-red: #dc143c;
+$color-blue: #1e90ff;
+$color-purple: #ba55da;
+$color-green: #3cb371;
+$color-yellow: #ff8c00;
+$color-pink: #da70d6;
+$bnr-red: '../assets/img/banner/bnr_red.png';
+$bnr-purple: '../assets/img/banner/bnr_purple.png';
+$bnr-blue: '../assets/img/banner/bnr_blue.png';
+$bnr-green: '../assets/img/banner/bnr_green.png';
+$bnr-yellow: '../assets/img/banner/bnr_yellow.png';
+$bnr-pink: '../assets/img/banner/bnr_pink.png';
+$colors: $color-red,$color-purple,$color-blue,$color-green,$color-yellow,$color-pink;
+$bnrs: $bnr-red,$bnr-purple,$bnr-blue,$bnr-green,$bnr-yellow,$bnr-pink;
+
+$font-sawarabi: "Sawarabi Mincho";
+
+$gradation-bg :linear-gradient(to bottom, #eee 0%,#fff 100%);

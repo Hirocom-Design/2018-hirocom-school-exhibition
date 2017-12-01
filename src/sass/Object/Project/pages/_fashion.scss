@@ -1,0 +1,6 @@
+.p-fashion{
+  &__hero{
+    background: $color-green;
+    @include bgCover('../assets/img/banner/bnr_green.png');
+  }
+}

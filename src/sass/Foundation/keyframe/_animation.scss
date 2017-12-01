@@ -1,0 +1,71 @@
+@keyframes bgEffect {
+    from {
+        background-size: 120%;
+    }
+
+    to {
+        background-size: 100%;
+    }
+}
+@keyframes downEffect {
+    0% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(.4rem);
+    }
+
+    60% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@mixin slideUp($time) {
+     @keyframes slideUp-#{$time} {
+        0% {
+            transform: translateY(4rem);
+            opacity: 0;
+        }
+
+        #{$time}% {
+            transform: translateY(4rem);
+            opacity: 0
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    animation-name: slideUp-#{$time};
+}
+@mixin fadeIn {
+     @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    animation-name: fadeIn;
+}
+@mixin border {
+     @keyframes border {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    animation-name: border;
+}
